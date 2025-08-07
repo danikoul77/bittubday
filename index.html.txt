@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Happy Birthday Bittu ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans&display=swap');
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Open Sans', sans-serif;
+        background-color: #ffe6f0;
+        overflow-x: hidden;
+    }
+    .container {
+        text-align: center;
+        padding: 40px 20px;
+    }
+    h1 {
+        font-family: 'Pacifico', cursive;
+        color: #ff3399;
+        font-size: 2.5em;
+        margin-bottom: 10px;
+    }
+    .typing {
+        display: inline-block;
+        border-right: 2px solid black;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: typing 5s steps(40, end), blink .75s step-end infinite;
+        font-size: 1.2em;
+        color: #cc0066;
+    }
+    @keyframes typing {
+        from { width: 0; }
+        to { width: 100%; }
+    }
+    @keyframes blink {
+        from, to { border-color: transparent }
+        50% { border-color: black; }
+    }
+    img {
+        width: 90%;
+        max-width: 400px;
+        margin-top: 30px;
+        border-radius: 20px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .hearts {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        overflow: hidden;
+    }
+    .hearts::before {
+        content: "❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️";
+        position: absolute;
+        top: -20%;
+        left: 50%;
+        font-size: 2rem;
+        animation: fall 10s linear infinite;
+    }
+    @keyframes fall {
+        0% { transform: translate(-50%, -20%) rotate(0deg); }
+        100% { transform: translate(-50%, 120vh) rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="hearts"></div>
+  <div class="container">
+    <h1>Happy Birthday to my lifeline 🎂</h1>
+    <div class="typing">
+      Tu jab hansti hai, toh mere andar kuch bloom karta hai.<br>
+      Tu roothi ho, toh world pause ho jata hai.<br>
+      Tu paas ho, toh main hoon. Bas itna kaafi hai.<br>
+      My jaan, my peace, my Bittu.
+    </div>
+    <br><br>
+    <img src="https://i.imgur.com/FtMGWrM.png" alt="Lovebirds">
+    <audio autoplay loop>
+      <source src="https://dl.dropboxusercontent.com/scl/fi/qmlgpcxnn6sbqxy25tjh0/Jaane-Kaun-Tu-Meri.mp3?rlkey=zy9oatpmpfvkltuh0p03k4jln&st=5h1o3c82&dl=0" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+</body>
+</html>
